@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Pop Up</title>
+    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 20px;
+            /* height: 200px; */
+            box-sizing: border-box;
+            /* background-color: aqua; */
+           
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .p{
+            background: linear-gradient(45deg,rgb(100, 100, 235),rgb(86, 202, 86), rgb(205, 205, 116));
+            background-repeat: no-repeat;
+        }
+        .i{
+            border: 2px solid black;
+            height: 200px;
+            width: 500px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .o{
+            display: flex;
+        justify-content: space-around;        }
+        .o:hover{
+            cursor: pointer;
+            
+        }
+        .u{
+            background-color: rgb(0, 255, 128);
+        }
+.u:hover {
+    background-color: green;
+}
+.y{
+    background-color: rgb(222, 64, 64);
+}
+.y:hover{
+    background-color: rgb(133, 3, 3);
+}
+
+    </style>
+</head>
+<body>
+    <div class="p">
+    <div >
+        <h1>
+            Are You sure !!!
+        </h1>
+    </div>
+       <div>
+        <button>Submit</button>
+        <button>Delete</button>
+       </div>
+    </div>
+</div>
+    <div class="i">
+      Are you sure to delete this !!!  
+      <div class="o">
+        <i class="fa-solid fa-check u" ></i>
+        <i class="fa-solid fa-xmark y" ></i>
+      </div>
+    </div>
+</body>
+</html>
