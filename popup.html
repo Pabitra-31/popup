@@ -1,75 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <title>Pop Up</title>
-    <!-- <link rel="stylesheet" href=""> -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
     <style>
-        
-        *{
+        * {
             margin: 0;
             padding: 20px;
-            /* height: 200px; */
             box-sizing: border-box;
-            /* background-color: aqua; */
-           
+            background-blend-mode: lighten;
+
         }
-        button:hover{
+
+        button:hover {
             cursor: pointer;
         }
-        .p{
-            background: linear-gradient(45deg,rgb(100, 100, 235),rgb(86, 202, 86), rgb(205, 205, 116));
+
+        .p {
+            background: linear-gradient(45deg, rgb(100, 100, 235), rgb(86, 202, 86), rgb(205, 205, 116));
             background-repeat: no-repeat;
         }
-        .i{
+
+        .i {
             border: 2px solid black;
             height: 200px;
             width: 500px;
             font-weight: bold;
             font-size: 30px;
         }
-        .o{
+
+        .o {
             display: flex;
-        justify-content: space-around;        }
-        .o:hover{
-            cursor: pointer;
-            
+            justify-content: space-around;
         }
-        .u{
+
+        .o:hover {
+            cursor: pointer;
+        }
+
+        .u {
             background-color: rgb(0, 255, 128);
         }
-.u:hover {
-    background-color: green;
-}
-.y{
-    background-color: rgb(222, 64, 64);
-}
-.y:hover{
-    background-color: rgb(133, 3, 3);
-}
 
+        .u:hover {
+            background-color: green;
+        }
+
+        .y {
+            background-color: rgb(222, 64, 64);
+        }
+
+        .y:hover {
+            background-color: rgb(133, 3, 3);
+        }
+
+        #cont {
+            background-color: beige;
+
+        }
+
+        #wholeContainer {
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.347);
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
+
 <body>
-    <div class="p">
-    <div >
-        <h1>
-            Are You sure !!!
-        </h1>
+    <div class="p" id="blur">
+        <div>
+            <h1>
+                Are You sure !!!
+            </h1>
+        </div>
+        <div>
+            <button>Submit</button>
+            <button id="delete-btn" onclick="toggle()">Delete</button>
+        </div>
     </div>
-       <div>
-        <button>Submit</button>
-        <button>Delete</button>
-       </div>
     </div>
-</div>
-    <div class="i">
-      Are you sure to delete this !!!  
-      <div class="o">
-        <i class="fa-solid fa-check u" ></i>
-        <i class="fa-solid fa-xmark y" ></i>
-      </div>
+    <div id="wholeContainer">
+        <div class="i" id="cont">
+            Are you sure to delete this !!!
+            <div class="o">
+                <i class="fa-solid fa-check u" onclick="onHandleYes()"></i>
+                <i class="fa-solid fa-xmark y" onclick="onHandleNo()"></i>
+            </div>
+        </div>
     </div>
+    <script src="./popup.js"></script>
 </body>
+
 </html>
