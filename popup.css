@@ -1,21 +1,15 @@
         * {
             margin: 0;
             padding: 20px;
-            /* height: 200px; */
             box-sizing: border-box;
-            /* background-color: aqua; */
-
         }
-
         button:hover {
             cursor: pointer;
         }
-
         .p {
             background: linear-gradient(45deg, rgb(100, 100, 235), rgb(86, 202, 86), rgb(205, 205, 116));
             background-repeat: no-repeat;
         }
-
         .i {
             border: 2px solid black;
             height: 200px;
@@ -31,7 +25,6 @@
 
         .o:hover {
             cursor: pointer;
-
         }
 
         .u {

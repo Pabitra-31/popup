@@ -15,9 +15,22 @@ function onHandleNo() {
 function onHandleYes() {
   onHandleNo();
   let blurElement = document.getElementById("blur");
-  // blurElement.style.display = "none";
   let h1Element = document.querySelector("h1");
   h1Element.style.display = "none";
- let dElement= document.getElementById('delete-btn');
- dElement.style.display="none";
+  let dElement = document.getElementById("delete-btn");
+  dElement.style.display = "none";
 }
+let wholeContainerElement = document.getElementById("wholeContainer");
+wholeContainerElement.addEventListener("click", () => {
+  onHandleNo();
+  
+ });
+ let btnElement = document.getElementById("submit");
+ btnElement.innerText = "Reload";
+ btnElement.addEventListener("click", () =>{
+  let h1Element = document.querySelector("h1");
+  h1Element.style.display = "block";
+  let dElement = document.getElementById("delete-btn");
+  dElement.style.display = "inline";
+ })
+ 
